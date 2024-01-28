@@ -16,8 +16,8 @@ function init() {
       if((keynumber - (6*(octaves + startingOctave))) < numberOfKeys){
         let key = createKey('white', pianoNotes[j], (i + startingOctave), keynumber);
         keyboard.appendChild(key);
+        key.appendChild(sound);
       }
-      keyboard.appendChild(sound);
 
       if (j != 2 && j != 6) {
         keynumber++;
