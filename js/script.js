@@ -126,12 +126,43 @@ function handleInput(event) {
   const keyon = document.querySelector(`[data-letter-note-file-name="${note}"]`);
 
   switch (command) {
-  case 144:
+    case 144:
     case 145:
-    playSound(midiNote, velocity);
-    break;
-  case 128:
-    break;
+    case 146:
+    case 147:
+    case 148:
+    case 149:
+    case 150:
+    case 151:
+    case 152:
+    case 153:
+    case 154:
+    case 155:
+    case 156:
+    case 157:
+    case 158:
+    case 159:
+      playSound(midiNote, velocity);
+      keyon.classList.add("piano__key--playing");
+      break;
+    case 128:
+    case 129:
+    case 130:
+    case 131:
+    case 132:
+    case 133:
+    case 134:
+    case 135:
+    case 136:
+    case 137:
+    case 138:
+    case 139:
+    case 140:
+    case 141:
+    case 142:
+    case 143:
+      keyon.classList.remove("piano__key--playing");
+      break;
   }
 }
 
