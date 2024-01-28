@@ -223,3 +223,10 @@ function updateDevices(event) {
 
 
 init();
+function init2() {
+  if(navigator.requestMIDIAccess) {
+    navigator.requestMIDIAccess().then(success, fail);
+  }
+}
+
+init2();
