@@ -142,7 +142,7 @@ function handleInput(event) {
     case 157:
     case 158:
     case 159:
-      playSound(midiNote, velocity);
+      playSound(keyon, velocity);
       keyon.classList.add("piano__key--playing");
       break;
     case 128:
