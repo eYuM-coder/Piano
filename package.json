@@ -5,16 +5,13 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "@tonejs/piano": "^0.2.1",
-      "@types/node": "^18.0.6",
-      "node-fetch": "^3.2.6",
-      "tone": "^14.7.77"
+        "@tonejs/piano": "^0.2.1",
+        "tone": "^14.7.77"
     }
-  }
-  
+}
